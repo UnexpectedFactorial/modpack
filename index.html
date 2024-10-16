@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            background-color: #eaeaea;
+            border-radius: 5px;
+        }
+        .tab.active {
+            background-color: #333;
+            color: #fff;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #2980b9;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script>
+        function showTab(column) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById('tab' + column).classList.add('active');
+            document.getElementById('column' + column).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Mod List</h1>
+        <p>Welcome! Below is a list of various mods displayed in two columns. Use the tabs to switch between the columns.</p>
+        <div class="tabs">
+            <div class="tab active" id="tab1" onclick="showTab(1)">Download</div>
+            <div class="tab" id="tab2" onclick="showTab(2)">Mod List</div>
+        </div>
+        <div class="tab-content active" id="column1">
+            <div class="center">
+                <a href="mods.zip" class="download-button" download>Download</a>
+            </div>
+        </div>
+        <div class="tab-content" id="column2">
+            <p>Im filling this shit out later lmao</p>
+            <table>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Ambient Environment</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Ambient Sounds</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Archers</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Architectury</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+                <tr><td>Adaptive Tooltips</td><td><a href="#">Placeholder Link</a></td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
